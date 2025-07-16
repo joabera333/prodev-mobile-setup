@@ -6,6 +6,7 @@ import {
 	TouchableOpacity,
 	Image,
 } from "react-native";
+//import { styles } from "@/styles";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
 
@@ -15,7 +16,7 @@ export default function Index() {
 			<SafeAreaView style={styles.container}>
 				<View style={styles.navGroup}>
 					<Ionicons name="arrow-back" size={25} />
-					<Image source={require("@/assets/images/Logo.png")} />
+					<Image source={require("@/assets/images/logoo.png")} />
 				</View>
 				<Text style={styles.largeText}>Sign in to your</Text>
 				<Text style={styles.largeText}>Account</Text>
@@ -81,7 +82,7 @@ export default function Index() {
 				</View>
 
 				<View style={styles.subTextGroup}>
-					<Text style={styles.subText}>do not have an account?</Text>
+					<Text style={styles.subText}>Do not have an account</Text>
 					<Text style={styles.subTextJoin}>Join now</Text>
 				</View>
 			</SafeAreaView>
@@ -104,7 +105,7 @@ const styles = StyleSheet.create({
 	},
 	largeText: {
 		fontSize: 40,
-		fontWeight: "700",
+		fontWeight: 700,
 	},
 	smallText: {
 		fontSize: 12,
@@ -197,6 +198,8 @@ const styles = StyleSheet.create({
 	subTextJoin: {
 		fontSize: 18,
 		color: "#FFA800",
-		fontWeight: "600",
+		fontWeight: 600,
 	},
 });
+
+export { styles };
